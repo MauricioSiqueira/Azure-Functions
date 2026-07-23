@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>PdfMerge.Application</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2" />
+    <!-- <PackageReference Include="PdfSharp" Version="6.1.1" /> -->
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PdfMerge.Domain\PdfMerge.Domain.csproj" />
+  </ItemGroup>
+
+    <ItemGroup>
+    <Reference Include="Syncfusion.Compression.Portable">
+      <HintPath>Assets\Syncfusion.Compression.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.HtmlConverter.Portable">
+      <HintPath>Assets\Syncfusion.HtmlConverter.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing">
+      <HintPath>Assets\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Pdf.Imaging.Portable">
+      <HintPath>Assets\Syncfusion.Pdf.Imaging.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Pdf.Portable">
+      <HintPath>Assets\Syncfusion.Pdf.Portable.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,7 @@
+bin/
+obj/
+.vs/
+*.user
+.azure/
+azure-functions-core-tools/
+appsettings.Development.json
