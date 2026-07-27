@@ -101,3 +101,19 @@ contagem de páginas e os cenários de erro.
   requisição, considere trocar `MemoryStream` por arquivos temporários em
   disco (`/tmp` no Linux Consumption) para não estourar o limite de memória
   da instância.
+
+## Provisionamento de Infra
+
+Para provisionar a infra necessária para o deploy usando o workflow do Git Actions você precisará de uma conta no Azure, Um Resource group criado e configurado, um Storage Account criado, configurado e com ao menos um container, também será necessario criar um Azure Function App dentro desde resource group.
+
+Para facilitar o provisionamento do primeiro deploy, criei um .sh que está dentro da pasta infra que tem a função de provisionar a configuração de acesso para deploy do Git -> Azure, configurando credencials e permissões.
+
+## Como rodar o .sh ? 
+
+# Permissão para executar
+````chmod +x AzureFunctionDeployConfig.sh
+````
+
+# Executando
+```./AzureFunctionDeployConfig.sh \ nome-do-app \ resource-group \ function-app \ "codigo-gerado-ao-consultar-seu-OIDC-no-settings-do-repo"
+```
