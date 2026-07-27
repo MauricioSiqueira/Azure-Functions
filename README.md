@@ -110,12 +110,12 @@ Para facilitar o provisionamento do primeiro deploy, criei um .sh que está dent
 
 ## Como rodar o .sh ? 
 
-# Permissão para executar
+## Permissão para executar
 ````bash
 chmod +x AzureFunctionDeployConfig.sh
 ````
 
-# Executando
+## Executando
 ```bash
 ./AzureFunctionDeployConfig.sh \ nome-do-app \ resource-group \ function-app \ "codigo-gerado-ao-consultar-seu-OIDC-no-settings-do-repo"
 ```
